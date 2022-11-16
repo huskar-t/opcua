@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/ua"
+	"github.com/huskar-t/opcua/id"
+	"github.com/huskar-t/opcua/ua"
 	"github.com/pascaldekloe/goe/verify"
 )
 

@@ -6,11 +6,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/stats"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/huskar-t/opcua/debug"
+	"github.com/huskar-t/opcua/errors"
+	"github.com/huskar-t/opcua/stats"
+	"github.com/huskar-t/opcua/ua"
+	"github.com/huskar-t/opcua/uasc"
 )
 
 // Subscribe creates a Subscription with given parameters.

@@ -18,13 +18,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/stats"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/huskar-t/opcua/debug"
+	"github.com/huskar-t/opcua/errors"
+	"github.com/huskar-t/opcua/id"
+	"github.com/huskar-t/opcua/stats"
+	"github.com/huskar-t/opcua/ua"
+	"github.com/huskar-t/opcua/uacp"
+	"github.com/huskar-t/opcua/uasc"
 )
 
 // GetEndpoints returns the available endpoint descriptions for the server.
@@ -663,7 +663,7 @@ type Session struct {
 // that the server sent in Create Session Response. The default PolicyID
 // "Anonymous" wii be set if it's missing in response.
 //
-// See Part 4, 5.6.2
+// # See Part 4, 5.6.2
 //
 // Note: Starting with v0.5 this method will require a context
 // and the corresponding XXXWithContext(ctx) method will be removed.
@@ -755,7 +755,7 @@ func anonymousPolicyID(endpoints []*ua.EndpointDescription) string {
 // the client already has a session it will be closed. To retain the current
 // session call DetachSession.
 //
-// See Part 4, 5.6.3
+// # See Part 4, 5.6.3
 //
 // Note: Starting with v0.5 this method will require a context
 // and the corresponding XXXWithContext(ctx) method will be removed.
@@ -838,7 +838,7 @@ func (c *Client) ActivateSessionWithContext(ctx context.Context, s *Session) err
 
 // CloseSession closes the current session.
 //
-// See Part 4, 5.6.4
+// # See Part 4, 5.6.4
 //
 // Note: Starting with v0.5 this method will require a context
 // and the corresponding XXXWithContext(ctx) method will be removed.
@@ -1131,7 +1131,7 @@ func (c *Client) BrowseNextWithContext(ctx context.Context, req *ua.BrowseNextRe
 
 // RegisterNodes registers node ids for more efficient reads.
 //
-// Part 4, Section 5.8.5
+// # Part 4, Section 5.8.5
 //
 // Note: Starting with v0.5 this method will require a context
 // and the corresponding XXXWithContext(ctx) method will be removed.
@@ -1153,7 +1153,7 @@ func (c *Client) RegisterNodesWithContext(ctx context.Context, req *ua.RegisterN
 
 // UnregisterNodes unregisters node ids previously registered with RegisterNodes.
 //
-// Part 4, Section 5.8.6
+// # Part 4, Section 5.8.6
 //
 // Note: Starting with v0.5 this method will require a context
 // and the corresponding XXXWithContext(ctx) method will be removed.

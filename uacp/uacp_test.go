@@ -7,7 +7,7 @@ package uacp
 import (
 	"testing"
 
-	"github.com/gopcua/opcua/ua"
+	"github.com/huskar-t/opcua/ua"
 )
 
 func TestHello(t *testing.T) {

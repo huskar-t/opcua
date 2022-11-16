@@ -1,4 +1,4 @@
-module github.com/gopcua/opcua
+module github.com/huskar-t/opcua
 
 go 1.17
 

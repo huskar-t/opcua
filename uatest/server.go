@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/ua"
+	"github.com/huskar-t/opcua"
+	"github.com/huskar-t/opcua/errors"
+	"github.com/huskar-t/opcua/ua"
 )
 
 // Server runs a python test server.

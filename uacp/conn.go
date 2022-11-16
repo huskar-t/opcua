@@ -12,9 +12,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/ua"
+	"github.com/huskar-t/opcua/debug"
+	"github.com/huskar-t/opcua/errors"
+	"github.com/huskar-t/opcua/ua"
 )
 
 const (
